@@ -1,0 +1,33 @@
+// input:
+// 2
+// output:
+// 2 2 1 1
+// 2 1
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int num = sc.nextInt();
+		
+		for(int i=num; i>0; i--){
+		    int print = num;
+		    int count = 0;
+		    for(int j=num*i-1; j>=0; j--){
+		        System.out.print( print + " ");
+		        count++;
+		        if(count == i){
+		            print--;
+		            count = 0;
+		        }
+		    }
+		    System.out.println();
+		}
+		
+	}
+}
+
+
