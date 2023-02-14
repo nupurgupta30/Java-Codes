@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+class Main {
+	public static void main (String[] args){
+		Scanner sc=new Scanner(System.in);
+
+		int T=sc.nextInt();
+		while(T-->0){
+		    Solution obj=new Solution();
+		    int N;
+		    N=sc.nextInt();
+        
+		    obj.printNos(N);
+		    System.out.println();
+		    
+		}
+	}
+}
+
+class Solution{
+    public void printNos(int N){
+        int i = 1;
+        printNum(i, N);
+    }
+    public void printNum(int i, int N){
+        if(i<=N){
+            System.out.print(i + " ");
+            i++;
+            printNum(i, N);
+        }
+        
+    }
+}
+
